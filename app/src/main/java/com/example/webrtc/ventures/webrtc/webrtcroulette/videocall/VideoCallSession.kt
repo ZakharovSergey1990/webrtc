@@ -263,7 +263,7 @@ class VideoCallSession(
     }
 
     companion object {
-
+////////////
         fun connect(context: Context, url: String, videoRenderers: VideoRenderers, callback: (VideoCallStatus) -> Unit) : VideoCallSession {
             val websocketHandler = SignalingWebSocket()
             val session = VideoCallSession(context, callback, websocketHandler, videoRenderers)
